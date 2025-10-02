@@ -1,29 +1,28 @@
-
 // ================== (Entity Layer) ==================
 
-// thiss contains book title and availability status.
+// Represents a book with its title and availability
 public class Book {
     private String title;
-    private boolean available;
+    private boolean isAvailable;
 
-    // Constructor to create a new book
+    // Constructor to make a new book (default available = true)
     public Book(String title) {
         this.title = title;
-        this.available = true;
+        this.isAvailable = true;
     }
 
+    // Getter for title
     public String getTitle() {
         return title;
-    }  // ( Getter) return the title of the book
+    }
 
-    public boolean isAvailable() {
-        return available;
-    }  // (Getter) check if the book is available to borrow
+    // Getter to check availability
+    public boolean getStatus() {
+        return isAvailable;
+    }
 
-
-
-    public void borrow() {
-        this.available = false;
-    }   // borrow the book (set availability to false)
-
+    // Mark the book as borrowed
+    public void markAsBorrowed() {
+        this.isAvailable = false;
+    }
 }

@@ -1,26 +1,26 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
 // ================== (Data Layer) ==================
-//  stores books in a list and provides a method to find books by title.
-
+// Holds the collection of books and provides search functionality
 public class BookRepository {
     private List<Book> books;
-    // Constructor to create initial list of books in the library
+
+    // Load some default books in the library
     public BookRepository() {
         books = new ArrayList<>();
         books.add(new Book("Java Programming"));
         books.add(new Book("Data Structures"));
         books.add(new Book("Database Systems"));
     }
-    // find a book by title (case-insensitive search)
-    public Book findBook(String title) {
-        for (Book b : books) {
-            if (b.getTitle().equalsIgnoreCase(title)) {
-                return b;
+
+    // Search for a book by title (case-insensitive)
+    public Book searchBook(String title) {
+        for (Book book : books) {
+            if (book.getTitle().equalsIgnoreCase(title)) {
+                return book;
             }
         }
-        return null; // If no book is found
+        return null;
     }
 }

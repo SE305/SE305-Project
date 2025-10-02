@@ -1,29 +1,25 @@
-
 import java.util.Scanner;
 
 // ================== (Presentation Layer) ==================
-// It interacts with the user (input/output) using Scanner.
-
+// Handles interaction with the user
 public class LibraryApp {
     public static void main(String[] args) {
-        // Create the service layer object
-        LibraryService service = new LibraryService();
-        Scanner scanner = new Scanner(System.in);
+        LibraryService library = new LibraryService();
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println(" *******Welcome to the Online Library System!*******");
-        // Main loop: keep asking user until they type "exit"
+        System.out.println("===== Welcome to My Library System =====");
+
         while (true) {
-            System.out.print("Type the name of a book to borrow, or 'exit' to close:\n ");
-            String title = scanner.nextLine();
+            System.out.print("Enter a book title to borrow, or type 'exit' to quit:\n ");
+            String input = sc.nextLine();
 
-            if (title.equalsIgnoreCase("exit")) {
-                System.out.println("Goodbye!");
+            if (input.equalsIgnoreCase("exit")) {
+                System.out.println("Thanks for visiting! See you again.");
                 break;
             }
-            // Try to borrow the requested book
-            service.borrowBook(title);
+
+            library.borrowBook(input);
         }
-        // Close scanner after loop ends
-        scanner.close();
+        sc.close();
     }
 }

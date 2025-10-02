@@ -1,27 +1,24 @@
-
 // ================== (Business Layer) ==================
-// checks if a book exists, if it is available, and manages borrowing.
-
+// Contains the main logic for borrowing books
 public class LibraryService {
-    private BookRepository repo;
+    private BookRepository repository;
 
+    // Constructor connects LibraryService to BookRepository
     public LibraryService() {
-        repo = new BookRepository();
-    }     // Constructor to connect LibraryService with the BookRepository
+        repository = new BookRepository();
+    }
 
+    // Try to borrow a book by title
+    public void borrowBook(String title) {
+        Book book = repository.searchBook(title);
 
-    public void borrowBook(String title) {  // borrow a book by title
-
-        Book book = repo.findBook(title);
-
-        // Check if the book exists in the repository
         if (book == null) {
-            System.out.println("❌ The book '" + title + "' does not exist in the library.");
-        } else if (!book.isAvailable()) {
-            System.out.println("❌ Sorry, the book '" + title + "' is already borrowed,Please choose another.");
+            System.out.println("The book \"" + title + "\" was not found in our library.");
+        } else if (!book.getStatus()) {
+            System.out.println("Sorry, \"" + book.getTitle() + "\" is already borrowed. Try another one.");
         } else {
-            book.borrow();
-            System.out.println("✅ You have successfully borrowed: " + book.getTitle());
+            book.markAsBorrowed();
+            System.out.println("Enjoy reading! You borrowed: " + book.getTitle());
         }
     }
 }
