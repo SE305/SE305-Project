@@ -10,7 +10,7 @@ public class LibraryService {
 
     // Try to borrow a book by title
     public void borrowBook(String title) {
-        Book book = repository.searchBook(title);
+        Book1 book = repository.searchBook(title);
 
         if (book == null) {
             System.out.println("The book \"" + title + "\" was not found in our library.");
