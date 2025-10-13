@@ -1,9 +1,10 @@
+package test;
+
 import java.util.Scanner;
 // ****************** Presentation Layer ******************
 // The LibraryApp class interacts with the user.
 // It asks the user for a keyword, passes it to the service, and shows results.
 //-------------------------------------------------------------------------
-
 public class LibraryApp {
     public static void main(String[] args) {
         LibraryService service = new LibraryService(); // Business logic

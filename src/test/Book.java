@@ -1,3 +1,5 @@
+package test;
+
 // ****************** Entity Layer ******************
 // The (Book class) represents a single book in the library system.
 // Each book has a title and an availability status.
