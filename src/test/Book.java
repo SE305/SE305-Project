@@ -4,6 +4,7 @@ package test;
 // The (Book class) represents a single book in the library system.
 // Each book has a title and an availability status.
 //-------------------------------------------------------------------------
+
 public class Book {
     private String title; // Title of the book
     private boolean available = true; // Availability status
