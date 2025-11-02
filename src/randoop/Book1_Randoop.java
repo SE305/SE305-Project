@@ -1,3 +1,5 @@
+package randoop;
+
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
@@ -5,4 +7,5 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({ Book1_Randoop0.class })
 public class Book1_Randoop {
 }
+
 
