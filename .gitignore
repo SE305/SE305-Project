@@ -2,7 +2,10 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+<<<<<<< HEAD
 .kotlin
+=======
+>>>>>>> 8ee9dfb30befa54457f20dbf228986ede7ad4d35
 
 ### Eclipse ###
 .apt_generated
