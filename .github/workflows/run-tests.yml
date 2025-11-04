@@ -4,7 +4,7 @@ on:
  push:
    branches-ignore: []  
  pull_request:
-   branches-ignore: []   
+   branches-ignore: []  
 
 jobs:
  build:
@@ -13,6 +13,8 @@ jobs:
    steps:
      - name: Checkout repository
        uses: actions/checkout@v4
+       with:
+         fetch-depth: 0   
 
      - name: Set up Java
        uses: actions/setup-java@v4
@@ -22,11 +24,11 @@ jobs:
 
      - name: Compile all Java files
        run: |
-         echo "🔍 Searching for Java files..."
+         echo " Searching for Java files..."
          find $GITHUB_WORKSPACE -type f -name "*.java"
          javac -d out $(find $GITHUB_WORKSPACE -type f -name "*.java")
 
      - name: Run main class for testing
        run: |
-         echo "🚀 Running LibraryApp..."
+         echo " Running LibraryApp..."
          java -cp out test.LibraryApp || true
