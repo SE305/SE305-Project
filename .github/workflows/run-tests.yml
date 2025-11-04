@@ -2,9 +2,9 @@ name: Run Java Tests
 
 on:
  push:
-   branches: [ "**" ]  
+   branches: [ "REEM-SALEH" ]  
  pull_request:
-   branches: [ "**" ]   
+   branches: [ "REEM-SALEH"  ]   
 jobs:
  build:
    runs-on: ubuntu-latest
