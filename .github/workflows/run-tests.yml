@@ -1,21 +1,29 @@
 name: Run Java Tests
+
 on:
  push:
    branches: [ main ]
  pull_request:
    branches: [ main ]
+
 jobs:
  build:
    runs-on: ubuntu-latest
+
    steps:
      - name: Checkout repository
        uses: actions/checkout@v4
+       with:
+         fetch-depth: 0  
+
      - name: Set up Java
        uses: actions/setup-java@v4
        with:
          java-version: '17'
          distribution: 'temurin'
+
      - name: Compile code
-       run: javac -d out $(find src -name "*.java")
+       run: javac -d out $(find . -name "*.java")
+
      - name: Run tests
        run: java -cp "out:tools/randoop-all-4.3.4.jar" org.junit.runner.JUnitCore test.BookTest
