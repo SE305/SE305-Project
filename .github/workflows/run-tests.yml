@@ -1,4 +1,4 @@
-name: 🧪 Run Java Tests (Self-Diagnose)
+name: 🧪 Run Java Tests (Verbose)
 on:
  push:
    branches: [ main, develop ]
@@ -15,109 +15,42 @@ jobs:
        with:
          distribution: 'temurin'
          java-version: '17'
-     - name: 🔎 Print Java & OS info
-       run: |
-         set -x
-         java -version
-         javac -version
-         uname -a
-     - name: 🗂️ Show project tree (first 3 levels)
-       run: |
-         sudo apt-get update -y
-         sudo apt-get install -y tree
-         tree -L 3 -a || true
      - name: 🧰 Download JUnit Console
        run: |
-         set -e
          mkdir -p libs
          curl -L -o libs/junit-platform-console-standalone.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.9.3/junit-platform-console-standalone-1.9.3.jar
-         ls -lh libs
-     - name: 🧹 Discover source roots (common student layouts)
-       id: discover
+     - name: 🧹 Compile main Java files (with verbose logs)
        run: |
          set -e
-         CANDIDATES=("src/main/java" "src" "ReturnABook/src/main/java" "ReturnABook/src" ".")
-         ROOT=""
-         for p in "${CANDIDATES[@]}"; do
-           if [ -d "$p" ] && find "$p" -type f -name "*.java" | grep -q .; then
-             ROOT="$p"
-             break
-           fi
-         done
-         if [ -z "$ROOT" ]; then
-           echo "❌ No Java sources found in common paths." | tee -a discover.log
-           echo "root=" >> $GITHUB_OUTPUT
-           exit 1
-         fi
-         echo "✅ Using source root: $ROOT" | tee -a discover.log
-         echo "root=$ROOT" >> $GITHUB_OUTPUT
-     - name: 🧼 Clean & prepare out dir
-       run: |
-         rm -rf out
          mkdir -p out
-     - name: 🏗️ Compile MAIN sources
-       id: compile_main
-       continue-on-error: true
-       run: |
-         set -e
-         ROOT="${{ steps.discover.outputs.root }}"
-         if [ -d "$ROOT" ]; then
-           find "$ROOT" -type f -name "*.java" > main-sources.txt
+         if [ -d "ReturnABook/src" ]; then
+           ROOT="ReturnABook/src"
          else
-           find . -type f -name "*.java" ! -path "*/test/*" > main-sources.txt
+           ROOT="src"
          fi
-         echo "---- MAIN SOURCES ----" > compile-main.log
-         cat main-sources.txt >> compile-main.log || true
-         echo "----------------------" >> compile-main.log
-         if [ -s main-sources.txt ]; then
-           javac -d out -encoding UTF-8 -cp libs/junit-platform-console-standalone.jar @"main-sources.txt" 2>> compile-main.log
-         else
-           echo "ℹ️ No main sources found to compile." | tee -a compile-main.log
-         fi
-     - name: 🧪 Compile TEST sources
-       id: compile_test
-       continue-on-error: true
+         echo "Using source root: $ROOT"
+         find "$ROOT" -type f -name "*.java" > main-sources.txt || echo "⚠️ No Java files found!"
+         echo "Compiling sources..."
+         javac -d out -encoding UTF-8 -cp libs/junit-platform-console-standalone.jar @"main-sources.txt" 2> compile-main.log || true
+         echo "---- JAVAC OUTPUT ----"
+         cat compile-main.log || echo "no compile-main.log"
+         echo "----------------------"
+     - name: 🧪 Run JUnit tests (if any)
        run: |
-         set -e
-         CAND_TEST=("src/test/java" "ReturnABook/src/test/java" "test" "tests")
-         TESTROOT=""
-         for t in "${CAND_TEST[@]}"; do
-           if [ -d "$t" ] && find "$t" -type f -name "*.java" | grep -q .; then
-             TESTROOT="$t"
-             break
-           fi
-         done
-         echo "---- TEST SOURCES ----" > compile-test.log
-         if [ -n "$TESTROOT" ]; then
-           find "$TESTROOT" -type f -name "*.java" > test-sources.txt
-           cat test-sources.txt >> compile-test.log
-           echo "----------------------" >> compile-test.log
-           javac -d out -encoding UTF-8 -cp "libs/junit-platform-console-standalone.jar:out" @"test-sources.txt" 2>> compile-test.log
+         if [ -d "ReturnABook/src/test/java" ]; then
+           TESTROOT="ReturnABook/src/test/java"
+         elif [ -d "src/test/java" ]; then
+           TESTROOT="src/test/java"
          else
-           echo "ℹ️ No test sources found." | tee -a compile-test.log
-           echo "found=false" >> $GITHUB_OUTPUT
+           echo "ℹ️ No test sources found. Skipping tests."
            exit 0
          fi
-         echo "found=true" >> $GITHUB_OUTPUT
-     - name: ▶️ Run JUnit Console (if tests exist)
-       if: steps.compile_test.outputs.found == 'true'
-       continue-on-error: true
-       run: |
-         set -e
-         echo "---- JUNIT RUN ----" > junit-run.log
+         echo "Found test sources in $TESTROOT"
+         find "$TESTROOT" -type f -name "*.java" > test-sources.txt
+         javac -d out -encoding UTF-8 -cp "libs/junit-platform-console-standalone.jar:out" @"test-sources.txt" 2> compile-test.log || true
+         echo "---- TEST COMPILE OUTPUT ----"
+         cat compile-test.log || echo "no compile-test.log"
+         echo "------------------------------"
          java -jar libs/junit-platform-console-standalone.jar \
            --class-path out \
-           --scan-class-path 2>> junit-run.log
-     - name: 📦 Upload logs (always)
-       if: always()
-       uses: actions/upload-artifact@v4
-       with:
-         name: build-logs
-         path: |
-           discover.log
-           compile-main.log
-           compile-test.log
-           junit-run.log
-           main-sources.txt
-           test-sources.txt
-         if-no-files-found: ignore
+           --scan-class-path || true
