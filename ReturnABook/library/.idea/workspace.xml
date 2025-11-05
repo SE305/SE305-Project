@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6de392ff-c861-4f3b-a997-663650b81e94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/.github/workflows/run-tests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.idea/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.idea/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.idea/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.idea/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/se305.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/BookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/LibraryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/randoop/BookRandoopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/randoop/BookRandoopTest0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/randoop/LibraryRandoopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/randoop/LibraryRandoopTest0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/randoop/MainRandoopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/AddABook/src/randoop/MainRandoopTest0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/.idea/libraries/junit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/.idea/libraries/junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/.idea/libraries/randoop_all_4_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/Barrow.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/junit.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/randoop.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/SimpleCalculator/SimpleCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/Book1_Randoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/Book1_Randoop0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/BookRepository_Randoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/BookRepository_Randoop0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/LibraryApp_Randoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/LibraryApp_Randoop0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/LibraryService_Randoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/LibraryService_Randoop0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/SimpleCalculator_Randoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/randoop/SimpleCalculator_Randoop0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/test/Book1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/test/Book1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/test/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/test/BookRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/test/LibraryApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/test/LibraryAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/test/LibraryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/BarrowABook/src/test/LibraryServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/RegressionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/RegressionTest0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/.idea/libraries/junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/.idea/libraries/randoop_all_4_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/Search_Book.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/Tools/randoop-all-4.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/SimpleCalcualtorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/BookRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/BookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/LibraryApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/LibraryAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/LibraryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/LibraryServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/randooptests/Book_Randoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/SearchBook/src/test/randooptests/Book_Randoop0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/TaskDistribution.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/generated-tests/library/testproject" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/library - Shortcut.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/main - Shortcut.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/randoop-all-4.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/java - Shortcut.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java - Shortcut.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library - Shortcut.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/ModelLayer/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/ModelLayer/Loan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/ModelLayer/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/ModelLayer/ReturnReceipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/business/ReturnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/data/DataSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/data/InMemoryDataStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/presentation/ConsoleUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/BookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/ConsoleUITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/DataSeederTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/InMemoryDataStoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/LoanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/ReturnReceiptTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/java/library/testproject/ReturnServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/library - Shortcut (2).lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/library - Shortcut (3).lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/library - Shortcut (4).lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/library - Shortcut (5).lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/library - Shortcut (6).lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../ReturnABook/scr/main/library - Shortcut.lnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.github/workflows/run-tests.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.idea/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.idea/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.idea/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.idea/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/se305.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/BookTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/LibraryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/randoop/BookRandoopTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/randoop/BookRandoopTest0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/randoop/LibraryRandoopTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/randoop/LibraryRandoopTest0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/randoop/MainRandoopTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../AddABook/src/randoop/MainRandoopTest0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/.idea/libraries/junit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/.idea/libraries/randoop_all_4_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/Barrow.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/junit.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/randoop.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/SimpleCalculator/SimpleCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/Book1_Randoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/Book1_Randoop0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/BookRepository_Randoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/BookRepository_Randoop0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/LibraryApp_Randoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/LibraryApp_Randoop0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/LibraryService_Randoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/LibraryService_Randoop0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/SimpleCalculator_Randoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/randoop/SimpleCalculator_Randoop0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/test/Book1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/test/Book1Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/test/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/test/BookRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/test/LibraryApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/test/LibraryAppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/test/LibraryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../BarrowABook/src/test/LibraryServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../RegressionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../RegressionTest0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SE305-Project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/.idea/libraries/randoop_all_4_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/Search_Book.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/Tools/randoop-all-4.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/SimpleCalcualtorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/BookRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/BookTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/LibraryApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/LibraryAppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/LibraryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/LibraryServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/randooptests/Book_Randoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SearchBook/src/test/randooptests/Book_Randoop0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../TaskDistribution.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="353FX4hoNKsbRGd7oeBtFrgLZKz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6de392ff-c861-4f3b-a997-663650b81e94" name="Changes" comment="" />
+      <created>1762330889856</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762330889856</updated>
+    </task>
+    <servers />
+  </component>
+</project>
