@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ffdbbba1-15ff-4c00-8e8f-197722496e67" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelLayer/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelLayer/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelLayer/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelLayer/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelLayer/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelLayer/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/ReturnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/ReturnService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/DataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/DataSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/InMemoryDataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/InMemoryDataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/ConsoleUI.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="348r1NZSAWAcoExytP2ISOkwGjI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AppTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/dell/Desktop/ITSE305/scr/main/java/library",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.testproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library.testproject" />
+      <option name="MAIN_CLASS_NAME" value="library.testproject.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffdbbba1-15ff-4c00-8e8f-197722496e67" name="Changes" comment="" />
+      <created>1760605823679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760605823679</updated>
+    </task>
+    <servers />
+  </component>
+</project>
