@@ -36,7 +36,6 @@ jobs:
        id: discover
        run: |
          set -e
-         # نحاول نخمن أشهر المسارات
          CANDIDATES=("src/main/java" "src" "ReturnABook/src/main/java" "ReturnABook/src" ".")
          ROOT=""
          for p in "${CANDIDATES[@]}"; do
@@ -62,7 +61,6 @@ jobs:
        run: |
          set -e
          ROOT="${{ steps.discover.outputs.root }}"
-         # نجمع ملفات main فقط إن وجدت؛ وإلا نستخدم كل .java عدا test
          if [ -d "$ROOT" ]; then
            find "$ROOT" -type f -name "*.java" > main-sources.txt
          else
@@ -81,7 +79,6 @@ jobs:
        continue-on-error: true
        run: |
          set -e
-         # حاول نلقط مجلدات test الشائعة
          CAND_TEST=("src/test/java" "ReturnABook/src/test/java" "test" "tests")
          TESTROOT=""
          for t in "${CAND_TEST[@]}"; do
@@ -95,7 +92,6 @@ jobs:
            find "$TESTROOT" -type f -name "*.java" > test-sources.txt
            cat test-sources.txt >> compile-test.log
            echo "----------------------" >> compile-test.log
-           # نحتاج كلاس باث يحوي out + junit
            javac -d out -encoding UTF-8 -cp "libs/junit-platform-console-standalone.jar:out" @"test-sources.txt" 2>> compile-test.log
          else
            echo "ℹ️ No test sources found." | tee -a compile-test.log
@@ -125,9 +121,3 @@ jobs:
            main-sources.txt
            test-sources.txt
          if-no-files-found: ignore
-has context menu
-
-
-has context menu
-ReturnABook/src/test/java/library/testproject/RegressionTest.java
-ReturnABook/src/test/java/library/testproject/RegressionTest.java
