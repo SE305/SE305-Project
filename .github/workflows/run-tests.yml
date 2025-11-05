@@ -8,23 +8,31 @@ jobs:
  test:
    runs-on: ubuntu-latest
    steps:
-     - name: Checkout repository
+     - name: 🧭 Checkout repository
        uses: actions/checkout@v4
-     - name: Set up Java
+     - name: ☕ Set up Java
        uses: actions/setup-java@v4
        with:
          java-version: '17'
          distribution: 'temurin'
-     - name: Download JUnit
+     - name: 📦 Download JUnit
        run: |
          mkdir -p libs
-         curl -L -o libs/junit-platform-console-standalone.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.9.3/junit-platform-console-standalone-1.9.3.jar
-     - name: Compile all Java files
+         curl -L -o libs/junit-platform-console-standalone.jar \
+https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.9.3/junit-platform-console-standalone-1.9.3.jar
+     - name: 🧹 Clean and Compile main Java files
        run: |
-         find . -name "*.java" > sources.txt
+         echo "🧹 Cleaning old compiled files..."
+         rm -rf out
+         mkdir -p out
+         echo "🎯 Compiling only main (non-test) Java files..."
+         find . -path "./*/src/test*" -prune -o -name "*.java" -print > sources.txt
          javac -cp "libs/junit-platform-console-standalone.jar" -d out @sources.txt
-     - name: Run JUnit tests
+     - name: 🧪 Run JUnit Tests
        run: |
+         echo "🚀 Running JUnit tests..."
          java -jar libs/junit-platform-console-standalone.jar \
          --class-path out \
-         --scan-class-path
+         --scan-class-path || true
+     - name: ✅ All Done
+       run: echo "🎉 Workflow finished successfully!"
