@@ -27,4 +27,3 @@ public class Book1 {
     public void markAsBorrowed() {
         this.isAvailable = false;
     }
-}
