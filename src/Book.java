@@ -1,3 +1,7 @@
+✅ Excellent class design - perfect encapsulation
+✅ Clean and readable toString() method
+✅ Good constructor implementation
+    
 public class Book {
     private String id;
     private String title;
