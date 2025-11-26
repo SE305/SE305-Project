@@ -31,7 +31,7 @@ public class AppTest {
         // Verify output contains "Receipt" or "Book" as proof that it ran
         assertTrue(output.contains("Book:") || output.contains("Receipt ID:"), "Output should contain receipt info");
 
-        // Reset System.in and System.out if needed (optional)
+        // Reset System.in and System.out if needed (optional).
         System.setIn(System.in);
         System.setOut(System.out);
     }
