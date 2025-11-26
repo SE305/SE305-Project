@@ -25,7 +25,7 @@ public class AppTest {
         // Run the main method
         App.main(new String[]{});
 
-        // Convert output to String
+        // Convert output to String.
         String output = outContent.toString();
 
         // Verify output contains "Receipt" or "Book" as proof that it ran
