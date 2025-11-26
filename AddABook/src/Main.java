@@ -1,6 +1,9 @@
+🚨 Critical: Missing input validation for year field
+🔧 Suggestion: Add try-catch for NumberFormatException  
+🔧 Suggestion: Add menu option to search books
+✅ Good: User-friendly menu system
+    
 import java.util.Scanner;
-
-
 
 public class Main {
     public static void main(String[] args) {
