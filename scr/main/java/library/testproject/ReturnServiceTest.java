@@ -12,7 +12,7 @@ public class ReturnServiceTest {
 
     @Test
     public void testReturnBookSuccess() {
-        // Create a new data store and the ReturnService
+        // Create a new data store and the ReturnService.
         InMemoryDataStore store = new InMemoryDataStore();
         ReturnService service = new ReturnService(store);
 
