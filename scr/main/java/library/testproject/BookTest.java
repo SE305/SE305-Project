@@ -9,7 +9,7 @@ public class BookTest {
 
     @Test
     public void testBookCreationAndAvailability() {
-        // Create a new Book object with ID, title, author, and availability
+        // Create a new Book object with ID, title, author, and availability.
         Book book = new Book("B1", "Clean Code", "Robert C. Martin", false);
 
         // Check if the book ID is correctly assigned
