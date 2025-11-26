@@ -12,7 +12,7 @@ public class LoanTest {
 
     @Test
     public void testLoanCreationAndReturn() {
-        // Create a Book and Member to associate with the loan
+        // Create a Book and Member to associate with the loan.
         Book book = new Book("B1", "Clean Code", "Robert C. Martin", false);
         Member member = new Member("M1", "Ranya");
 
