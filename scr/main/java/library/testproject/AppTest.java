@@ -13,7 +13,7 @@ public class AppTest {
 
     @Test
     public void testAppMainRuns() {
-        // Simulate user input for ConsoleUI: Member ID, Book ID, empty return date
+        // Simulate user input for ConsoleUI: Member ID, Book ID, empty return date.
         String simulatedInput = "M1\nB1\n\n";
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
         System.setIn(in); // redirect System.in
