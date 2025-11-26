@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Test class for DataSeeder
+ * Test class for DataSeeder.
  * Ensures that the seed method correctly adds demo data to the store.
  */
 public class DataSeederTest {
