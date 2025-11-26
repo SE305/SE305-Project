@@ -1,6 +1,5 @@
 ⚠️ Performance: O(n) duplicate check - use HashMap for O(1)
 🔧 Suggestion: Add removeBook() method for complete functionality
-✅ Good: Clear logic and error handling
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,3 +33,4 @@ public class Library {
         }
     }
 }
+✅ Good: Clear logic and error handling
