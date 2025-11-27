@@ -14,7 +14,7 @@ public class ConsoleUITest {
 
     @Test
     public void testRunOnceBookReturn() {
-        // Prepare the in-memory store.
+        // Prepare the in-memory store
         InMemoryDataStore store = new InMemoryDataStore();
         Book book = new Book("B1", "Clean Code", "Robert C. Martin", false);
         Member member = new Member("M1", "Ranya");
