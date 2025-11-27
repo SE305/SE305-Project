@@ -9,7 +9,7 @@ public class MemberTest {
 
     @Test
     public void testMemberCreation() {
-        // Create a new Member object with ID and name.
+        // Create a new Member object with ID and name
         Member member = new Member("M1", "Ranya");
 
         // Verify that member ID is correct
