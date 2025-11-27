@@ -11,7 +11,7 @@ public class InMemoryDataStoreTest {
 
     @Test
     public void testFindActiveLoan() {
-        // Create a new in-memory data store.
+        // Create a new in-memory data store
         InMemoryDataStore store = new InMemoryDataStore();
 
         // Create Book and Member objects
