@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import library.ModelLayer.*;
 
 /**
- * Adds a few demo records to the data store.
+ * Adds a few demo records to the data store
  * so the program can run and test immediately.
  */
 public class DataSeeder {
