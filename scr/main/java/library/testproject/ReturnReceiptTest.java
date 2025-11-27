@@ -13,7 +13,7 @@ public class ReturnReceiptTest {
 
     @Test
     public void testReceiptCreation() {
-        // Create Book and Member for the loan.
+        // Create Book and Member for the loan
         Book book = new Book("B1", "Clean Code", "Robert C. Martin", false);
         Member member = new Member("M1", "Ranya");
 
