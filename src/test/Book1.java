@@ -1,5 +1,4 @@
 package test;
-
 // ================== (Entity Layer) ==================
 
 // Represents a book with its title and availability
