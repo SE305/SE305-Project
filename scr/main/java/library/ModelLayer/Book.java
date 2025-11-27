@@ -36,4 +36,4 @@ public class Book {
         return bookId + ": " + title + " by " + author + 
                (available ? " (Available)" : " (On Loan)");
 
-}} // 0
+}}
