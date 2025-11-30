@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class LibraryServiceTest {
 
     private LibraryService libraryService;
+    private BookRepository mockRepository;
 
     @BeforeEach
     void setUp() {
