@@ -1,3 +1,5 @@
+// 🔧 SUGGESTION [Line 1]: Add these imports
+
 package test;
 
 import org.junit.jupiter.api.BeforeEach;
