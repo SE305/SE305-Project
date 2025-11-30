@@ -1,3 +1,8 @@
+⚠️ Warning: Unrelated to library system
+⚠️ Warning: In different package
+🔧 Suggestion: Remove or move to separate project
+🔧 Suggestion: Add division by zero handling
+    
 package SimpleCalculator;
 
 public class SimpleCalculator {
