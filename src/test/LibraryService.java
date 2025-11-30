@@ -1,3 +1,10 @@
+
+✅ Clear business logic for borrowing books
+✅ Proper status checking workflow
+🚨 Critical: Mixing business logic with UI output (System.out.println)
+🔧 Suggestion: Return status codes or throw exceptions instead of printing
+🔧 Suggestion: Use dependency injection instead of hard-coded repository
+    
 package test;
 
 // ================== (Business Layer) ==================
