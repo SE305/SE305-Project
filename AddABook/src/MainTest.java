@@ -1,3 +1,6 @@
+//Output is checked loosely
+//String.join() could be replaced by multiline text
+
 import java.io.*;
 
 public class MainTest {

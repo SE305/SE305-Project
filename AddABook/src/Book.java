@@ -1,3 +1,5 @@
+//Missing getters
+
 public class Book {
     private String id;
     private String title;

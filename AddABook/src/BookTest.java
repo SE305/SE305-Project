@@ -1,3 +1,5 @@
+//Using assert without enabling JVM assertions
+
 public class BookTest {
     public static void main(String[] args) {
         // Create a Book object

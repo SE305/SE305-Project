@@ -1,3 +1,6 @@
+//nextInt() may crash on invalid input
+//Repeated scanner.nextLine()
+
 import java.util.Scanner;
 
 
