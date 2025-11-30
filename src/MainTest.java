@@ -1,7 +1,3 @@
-✅ Good: Comprehensive integration test  
-🔧 Suggestion: Add test for duplicate book ID case
-🔧 Suggestion: Add test for invalid input handling
-    
 import java.io.*;
 
 public class MainTest {
