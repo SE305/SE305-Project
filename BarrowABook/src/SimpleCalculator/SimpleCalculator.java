@@ -1,3 +1,4 @@
+//Division by zero error
 package SimpleCalculator;
 
 public class SimpleCalculator {

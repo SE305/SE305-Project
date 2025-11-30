@@ -1,3 +1,4 @@
+//Test now incorrect for null/empty search
 package test;
 
 import org.junit.jupiter.api.BeforeEach;

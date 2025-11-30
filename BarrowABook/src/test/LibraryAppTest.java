@@ -1,3 +1,4 @@
+//Cannot fully test due to Scanner and loop
 package test;
 
 import org.junit.jupiter.api.Test;
