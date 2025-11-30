@@ -12,6 +12,7 @@ public class LibraryServiceTest {
 
     @BeforeEach
     void setUp() {
+        mockRepository = Mockito.mock(BookRepository.class);
         libraryService = new LibraryService();
     }
 
