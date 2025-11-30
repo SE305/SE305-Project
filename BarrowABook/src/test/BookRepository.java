@@ -20,8 +20,11 @@ public class BookRepository {
 
     // Search for a book by title (case-insensitive)
     public Book1 searchBook(String title) {
+        if (title == null || title.trim().isEmpty()){
+            return null;
+        }
         for (Book1 book : books) {
-            if (book.getTitle().equalsIgnoreCase(title)) {
+            if (book.getTitle().equalsIgnoreCase(title.trim())) {
                 return book;
             }
         }
