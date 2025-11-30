@@ -1,7 +1,5 @@
-🚨 Issue: Duplicate imports detected
-📝 Suggestion: Use proper testing framework (JUnit)
-🔧 Suggestion: Split into separate test methods
-    
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.io.FileOutputStream;
