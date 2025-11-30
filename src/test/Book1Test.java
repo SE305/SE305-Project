@@ -1,3 +1,8 @@
+✅ Excellent unit test structure
+✅ Good coverage of book lifecycle
+✅ Clear test method names
+🔧 Suggestion: Add tests for constructor with null/empty title
+    
 package test;
 
 import org.junit.jupiter.api.BeforeEach;
