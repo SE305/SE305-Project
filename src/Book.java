@@ -1,5 +1,4 @@
 public class Book {
-    
     private String id;
     private String title;
     private String author;
@@ -21,4 +20,3 @@ public class Book {
         return "[" + id + "] " + title + " by " + author + " (" + year + ")";
     }
 }
-
