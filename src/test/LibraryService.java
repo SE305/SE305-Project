@@ -1,4 +1,3 @@
-
 ✅ Clear business logic for borrowing books
 ✅ Proper status checking workflow
 🚨 Critical: Mixing business logic with UI output (System.out.println)
