@@ -32,7 +32,29 @@ public class LibraryApp {
                 break;
             }
 
-            library.borrowBook(input);
+            if (input.isEmpty()) {
+                System.out.println("Please enter a valid book title.");
+                continue;
+            }
+
+            String result = library.borrowBook(input);
+            
+            switch (result) {
+                case "SUCCESS":
+                    System.out.println("Enjoy reading! You borrowed: " + input);
+                    break;
+                case "NOT_FOUND":
+                    System.out.println("The book \"" + input + "\" was not found in our library.");
+                    break;
+                case "ALREADY_BORROWED":
+                    System.out.println("Sorry, \"" + input + "\" is already borrowed. Try another one.");
+                    break;
+                case "INVALID_INPUT":
+                    System.out.println("Invalid input. Please enter a valid book title.");
+                    break;
+                default:
+                    System.out.println("Unexpected error occurred.");
+            }
         }
         sc.close();
     }
