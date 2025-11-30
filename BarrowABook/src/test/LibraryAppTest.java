@@ -7,9 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class LibraryAppTest {
     @Test
     void testLibraryAppInstantiation() {
-        assertDoesNotThrow(() -> {
-            new LibraryApp();
-        });
+        assertDoesNotThrow(() -> new LibraryApp());
     }
 
     @Test
