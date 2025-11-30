@@ -16,11 +16,12 @@ public class BookRepository {
 
     // Load some default books in the library
     public BookRepository() {
+        private Map<String, Book1> bookMap;
         public BookRepository() {
-        bookMap = new HashMap<>();
-        bookMap.put("java programming", new Book1("Java Programming"));
-        bookMap.put("data structures", new Book1("Data Structures"));
-        bookMap.put("database systems", new Book1("Database Systems"));
+            bookMap = new HashMap<>();
+            bookMap.put("java programming", new Book1("Java Programming"));
+            bookMap.put("data structures", new Book1("Data Structures"));
+            bookMap.put("database systems", new Book1("Database Systems"));
     }
 
     // Search for a book by title (case-insensitive)
