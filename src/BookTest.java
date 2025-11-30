@@ -1,5 +1,4 @@
 public class BookTest {
-    
     public static void main(String[] args) {
         // Create a Book object
         Book book = new Book("101", "Java Basics", "John Doe", 2020);
