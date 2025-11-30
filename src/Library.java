@@ -7,20 +7,37 @@ import java.util.List;
 
 public class Library {
     private List<Book> books;
+    private Map<String, Book>bookMap;
 
     public Library() {
         books = new ArrayList<>();
     }
 
     public boolean addBook(Book book) {
-        // Check for duplicate ID
-        for (Book b : books) {
-            if (b.getId().equals(book.getId())) {
-                return false; // Book with same ID exists
-            }
+        //o(1) duplicate check using HasMap
+        if(bookMap.containsKey(book.getId()){
+            return false;
         }
+    
         books.add(book);
+        bookMap.put(book.getId(),book);
         return true;
+    }
+
+    // NEW: Remove book method
+    public boolean removeBook(String bookId) {
+        Book book = bookMap.get(bookId);
+        if (book != null) {
+            books.remove(book);
+            bookMap.remove(bookId);
+            return true;
+        }
+        return false;
+    }
+ 
+    // NEW: Search book by ID
+    public Book searchBook(String bookId) {
+        return bookMap.get(bookId);
     }
 
     public void listBooks() {
