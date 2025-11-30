@@ -1,3 +1,9 @@
+✅ Clear user interface flow
+✅ Good user experience with exit option
+🚨 Problem: No input validation or error handling
+🔧 Suggestion: Add try-catch for scanner operations
+🔧 Suggestion: Validate user input before processing
+    
 package test;
 
 import java.util.Scanner;
