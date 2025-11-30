@@ -17,18 +17,37 @@ public class LibraryService {
         repository = new BookRepository();
     }
 
-    // Try to borrow a book by title
-    public void borrowBook(String title) {
+     public String borrowBook(String title) {
+        if (title == null || title.trim().isEmpty()) {
+            return "INVALID_INPUT";
+        }
+        
         Book1 book = repository.searchBook(title);
 
         if (book == null) {
-            System.out.println("The book \"" + title + "\" was not found in our library.");
+            return "NOT_FOUND";
         } else if (!book.getStatus()) {
-            System.out.println("Sorry, \"" + book.getTitle() + "\" is already borrowed. Try another one.");
+            return "ALREADY_BORROWED";
         } else {
             book.markAsBorrowed();
-            System.out.println("Enjoy reading! You borrowed: " + book.getTitle());
+            return "SUCCESS";
         }
     }
 
+    public String returnBook(String title) {
+        if (title == null || title.trim().isEmpty()) {
+            return "INVALID_INPUT";
+        }
+        
+        Book1 book = repository.searchBook(title);
+
+        if (book == null) {
+            return "NOT_FOUND";
+        } else if (book.getStatus()) {
+            return "ALREADY_RETURNED";
+        } else {
+            book.markAsReturned();
+            return "RETURN_SUCCESS";
+        }
+    }
 }
