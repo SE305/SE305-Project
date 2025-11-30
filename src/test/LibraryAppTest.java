@@ -1,3 +1,7 @@
+✅ Good integration test concept
+🚨 Problem: Very basic test coverage
+🔧 Suggestion: Add more comprehensive integration tests
+    
 package test;
 
 import org.junit.jupiter.api.Test;
