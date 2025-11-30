@@ -9,6 +9,12 @@ public class Book {
     private int year;
 
     public Book(String id, String title, String author, int year) {
+        if(id==null|| id.trim().isEmpty()){
+           throw new IllegeArgumentException("Book ID cannot by empty");
+        }
+
+        if (year<1000 || year>2025){
+            throw new IllegeArgumentException("Invalid publication year:"+year);
         this.id = id;
         this.title = title;
         this.author = author;
