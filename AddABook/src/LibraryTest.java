@@ -2,8 +2,6 @@
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.io.FileOutputStream;
 import java.io.FileDescriptor;
 
@@ -23,22 +21,20 @@ public class LibraryTest {
 
         // Capture output
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        printStream originalOut = System.out;
         System.setOut(new PrintStream(outputStream));
 
         library.listBooks();
 
-        // Restore original System.out
-        System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
+        System.setOut(originalOut);
 
-        // Print test results
         if (test1 && test2 && test3) {
             System.out.println("✅ Add book tests passed!");
         } else {
             System.out.println("❌ Add book tests failed!");
         }
 
-        // Print captured library listing
         System.out.println("=== Library Listing ===");
         System.out.println(outputStream.toString());
-    }
+    }
 }
