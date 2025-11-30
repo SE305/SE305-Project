@@ -13,6 +13,9 @@ public class Book1 {
 
     // Constructor to make a new book (default available = true)
     public Book1(String title) {
+        if (title == null || title.trim().isEmpty()){
+            throw new IllegalArgumentException)"Title cannot be null or empty");
+            
         this.title = title;
         this.isAvailable = true;
     }
@@ -30,6 +33,11 @@ public class Book1 {
     // Mark the book as borrowed
     public void markAsBorrowed() {
         this.isAvailable = false;
+    }
+
+    // Mark the book as returned
+    public void markAsReturned() {
+        this.isAvailable = true;
     }
 }
 
