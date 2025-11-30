@@ -1,3 +1,9 @@
+✅ Excellent encapsulation with private fields and public methods
+✅ Clear constructor with proper initialization
+🔧 Suggestion: Add input validation in constructor
+🔧 Suggestion: Add method to mark book as returned/available again
+🔧 Suggestion: Rename class from "Book1" to "Book" for better naming
+    
 package test;
 // ================== (Entity Layer) ==================
 
