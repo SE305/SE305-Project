@@ -16,19 +16,16 @@ public class BookRepository {
 
     // Load some default books in the library
     public BookRepository() {
-        books = new ArrayList<>();
-        books.add(new Book1("Java Programming"));
-        books.add(new Book1("Data Structures"));
-        books.add(new Book1("Database Systems"));
+        public BookRepository() {
+        bookMap = new HashMap<>();
+        bookMap.put("java programming", new Book1("Java Programming"));
+        bookMap.put("data structures", new Book1("Data Structures"));
+        bookMap.put("database systems", new Book1("Database Systems"));
     }
 
     // Search for a book by title (case-insensitive)
     public Book1 searchBook(String title) {
-        for (Book1 book : books) {
-            if (book.getTitle().equalsIgnoreCase(title)) {
-                return book;
-            }
-        }
-        return null;
+        fif (title == null) return null;
+        return bookMap.get(title.toLowerCase());
     }
 }
