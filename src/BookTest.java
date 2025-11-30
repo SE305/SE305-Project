@@ -1,3 +1,7 @@
+📝 Suggestion: Use JUnit instead of assertions
+🔧 Suggestion: Add more test cases (edge cases, invalid inputs)
+✅ Good: Covers basic functionality
+    
 public class BookTest {
     public static void main(String[] args) {
         // Create a Book object
