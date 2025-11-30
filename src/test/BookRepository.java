@@ -1,3 +1,9 @@
+✅ Good data layer separation
+✅ Case-insensitive search works well
+🚨 Performance Issue: O(n) linear search with ArrayList
+🔧 Suggestion: Use HashMap<String, Book> for O(1) lookup performance
+🔧 Suggestion: Add methods for adding/removing books dynamically
+    
 package test;
 
 import java.util.ArrayList;
