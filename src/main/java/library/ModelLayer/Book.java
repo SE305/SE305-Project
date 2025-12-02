@@ -12,7 +12,9 @@ public class Book {
     private boolean available; // True if the book is available for borrowing
 
     // Constructor: used when creating a new book object
-    public Book(String bookId, String title, String author, boolean available) {
+    public Book(String bookId, String title, String author, boolean available) {if ( bookId==null || title==null || author==null ){
+throw new IllegalArgumentException ("Book fields Cannot be null");
+}
         if ( bookId==null || title==null || author==null ){
 throw new IllegalArgumentException ("Book fields Cannot be null");
 }
