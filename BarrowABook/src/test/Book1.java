@@ -11,7 +11,7 @@ public class Book1 {
 
     // Constructor to make a new book (default available = true)
     public Book1(String title) {
-        if(title == nu;; || title.trim().isEmpty()){
+        if(title == null; || title.trim().isEmpty()){
             throw IllegalArgumentEception("Book title cannot be null or empty");
         }
         this.title = title;
