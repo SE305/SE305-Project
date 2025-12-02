@@ -1,3 +1,5 @@
+//Missing input validation
+//Missing return method
 package test;
 
 // ================== (Entity Layer) ==================
@@ -9,6 +11,9 @@ public class Book1 {
 
     // Constructor to make a new book (default available = true)
     public Book1(String title) {
+        if(title == nu;; || title.trim().isEmpty()){
+            throw IllegalArgumentEception("Book title cannot be null or empty");
+        }
         this.title = title;
         this.isAvailable = true;
     }
@@ -26,5 +31,10 @@ public class Book1 {
     // Mark the book as borrowed
     public void markAsBorrowed() {
         this.isAvailable = false;
+    }
+
+    // Mark the book as returned
+    public void markAsReturend() {
+        this.isAvailable = true;
     }
 }

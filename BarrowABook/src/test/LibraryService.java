@@ -1,17 +1,23 @@
+//Missing title validation
 package test;
 
 // ================== (Business Layer) ==================
 // Contains the main logic for borrowing books
 public class LibraryService {
-    private BookRepository repository;
+    private final BookRepository repository;
 
     // Constructor connects LibraryService to BookRepository
     public LibraryService() {
         repository = new BookRepository();
     }
 
-    // Try to borrow a book by title
+    //Borrow book with title validation
     public void borrowBook(String title) {
+        if(title == null || title.trim().isEmpty()){
+            System.out.println("Invalid title. Please enter a valid bokk name.");
+            return;
+        }
+
         Book1 book = repository.searchBook(title);
 
         if (book == null) {

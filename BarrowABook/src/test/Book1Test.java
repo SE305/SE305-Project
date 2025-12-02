@@ -1,3 +1,4 @@
+//Missing test for null/empty validation
 package test;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -16,19 +17,19 @@ public class Book1Test {
     @Test
     void testBookCreation() {
         assertEquals("Test Book", book.getTitle());
-        assertTrue(book.getStatus(), "New book should be available by default");
+        assertTrue(book.getStatus());
     }
 
     @Test
     void testMarkAsBorrowed() {
-        // Initially available
-        assertTrue(book.getStatus());
-
         // Mark as borrowed
         book.markAsBorrowed();
 
-        // Should not be available anymore
-        assertFalse(book.getStatus());
+        // Mark as returned
+        book.markAsRrturned();
+        
+        // Initially available
+        assertTrue(book.getStatus());
     }
 
     @Test
@@ -47,4 +48,11 @@ public class Book1Test {
         assertTrue(book1.getStatus());
         assertTrue(book2.getStatus());
     }
+
+     @Test
+    void testInvalidBookTitle() {
+        assertThrows(IllegalArgumentException.class, () -> new Book1(""));
+        assertThrows(IllegalArgumentException.class, () -> new Book1(null));
+    }
+
 }

@@ -1,3 +1,4 @@
+//No major errors, but missing tests
 package test;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -15,11 +16,6 @@ public class LibraryServiceTest {
 
     @Test
     void testBorrowBookSuccess() {
-        // This test verifies that borrowing an available book works
-        // Note: We can't easily assert the console output, but we can verify
-        // the book state changes through the repository
-        String title = "Java Programming";
-
         // Borrow should complete without exceptions
         assertDoesNotThrow(() -> libraryService.borrowBook(title));
     }
@@ -37,10 +33,8 @@ public class LibraryServiceTest {
 
     @Test
     void testBorrowBookNotFound() {
-        String nonExistentTitle = "Nonexistent Book Title";
-
         // Should handle gracefully without throwing exception
-        assertDoesNotThrow(() -> libraryService.borrowBook(nonExistentTitle));
+        assertDoesNotThrow(() -> libraryService.borrowBook("Nonexitstent Book Title"));
     }
 
     @Test
@@ -55,6 +49,6 @@ public class LibraryServiceTest {
 
     @Test
     void testLibraryServiceInitialization() {
-        assertNotNull(libraryService, "LibraryService should be properly initialized");
+        assertNotNull(libraryService);
     }
 }

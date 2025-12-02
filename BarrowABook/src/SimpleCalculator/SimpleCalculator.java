@@ -1,3 +1,4 @@
+//Division by zero error
 package SimpleCalculator;
 
 public class SimpleCalculator {
@@ -14,6 +15,9 @@ public class SimpleCalculator {
     }
 
     public int divide(int a, int b) {
+        if(b==0){
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
         return a / b;
     }
 }
