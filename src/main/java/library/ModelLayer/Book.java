@@ -13,6 +13,9 @@ public class Book {
 
     // Constructor: used when creating a new book object
     public Book(String bookId, String title, String author, boolean available) {
+        if ( bookId==null || title==null || author==null ){
+throw new IllegalArgumentException ("Book fields Cannot be null");
+}
         this.bookId = bookId;
         this.title = title;
         this.author = author;
