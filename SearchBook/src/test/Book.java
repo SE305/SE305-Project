@@ -13,7 +13,7 @@ public class Book {
 
     public String getTitle() { return title; } // return the title of the book
     public boolean isAvailable() { return available; } // check if the book is available
-    public void borrow() { available = false; }     //  mark the book as borrowed
+    public void borrow() { available = false; }     //  mark the book as borrowed.
 
 
     @Override
