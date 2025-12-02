@@ -1,3 +1,5 @@
+//ID lookup not efficient
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,10 +11,10 @@ public class Library {
     }
 
     public boolean addBook(Book book) {
-        // Check for duplicate ID
+        // Check duplicate ID
         for (Book b : books) {
             if (b.getId().equals(book.getId())) {
-                return false; // Book with same ID exists
+                return false;
             }
         }
         books.add(book);
@@ -27,6 +29,6 @@ public class Library {
             for (Book b : books) {
                 System.out.println(b);
             }
-        }
-    }
+        }
+    }
 }

@@ -1,3 +1,5 @@
+//Missing getters
+
 public class Book {
     private String id;
     private String title;
@@ -13,6 +15,18 @@ public class Book {
 
     public String getId() {
         return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getYear() {
+        return tear;
     }
 
     @Override
