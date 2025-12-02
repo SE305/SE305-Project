@@ -28,7 +28,13 @@ public class ConsoleUITest {
         // Prepare input as if the user typed it in the console
         String simulatedInput = "M1\nB1\n\n"; // Member ID, Book ID, empty date (today)
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
-        System.setIn(in); // redirect System.in to our simulated input
+        InputStream originalIn = System.in;
+System.setIn(in);
+try {
+ui.runOnce();
+} finally {
+System.setIn(originalIn);
+}
 
         // Create the ConsoleUI with ReturnService
         ReturnService service = new ReturnService(store);
