@@ -4,8 +4,9 @@ import org.junit.jupiter.api.Test;
 class SimpleCalculatorTest {
 
     @Test
-    void testAddition() {
-        int result = 2 + 3;
-        assertEquals(5, result);
+   void testAddition() {
+        SimpleCalculator calc = new SimpleCalculator();
+        assertEquals(5, calc.add(2, 3));   // First example
+        assertEquals(10, calc.add(7, 3));  // Second example
     }
 }
