@@ -6,7 +6,11 @@ import java.time.LocalDate;
  * Represents a return receipt when a book is returned.
  * This is part of the MODEL layer.
  */
-public class ReturnReceipt {
+public class ReturnReceipt { // Optional null validation based on review comment
+    if (receiptId == null || receiptId.trim().isEmpty() ||
+        loan == null || returnDate == null) {
+        throw new IllegalArgumentException("Receipt fields cannot be null or empty.");
+    }
 
     private String receiptId;     // Unique ID for the receipt
     private Loan loan;            // The loan that is being returned
