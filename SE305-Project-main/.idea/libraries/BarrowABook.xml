@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="BarrowABook">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/BarrowABook/junit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/BarrowABook/randoop.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

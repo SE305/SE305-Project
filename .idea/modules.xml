@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SE305-Project-main/AddABook/AddABook.iml" filepath="$PROJECT_DIR$/SE305-Project-main/AddABook/AddABook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SE305-Project-main/BarrowABook/BarrowABook.iml" filepath="$PROJECT_DIR$/SE305-Project-main/BarrowABook/BarrowABook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SE305-Project-main/SE305-Project-main.iml" filepath="$PROJECT_DIR$/SE305-Project-main/SE305-Project-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SE305-Project-main (1).iml" filepath="$PROJECT_DIR$/.idea/SE305-Project-main (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/SE305-Project-main/src/SE305-Project-main2.iml" filepath="$PROJECT_DIR$/SE305-Project-main/src/SE305-Project-main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SE305-Project-main/SearchBook/SearchBook.iml" filepath="$PROJECT_DIR$/SE305-Project-main/SearchBook/SearchBook.iml" />
+    </modules>
+  </component>
+</project>
